@@ -54,7 +54,7 @@
 
 .contact-col input {
 	width: 100%;
-	paddimg: 15px;
+	padding: 15px;
 	margin-bottom: 17px;
 	outline: none;
 	border: 1px solid #ccc;
@@ -62,7 +62,7 @@
 
 .contact-col textarea {
 	width: 100%;
-	paddimg: 15px;
+	padding: 15px;
 	margin-bottom: 17px;
 	outline: none;
 	border: 1px solid #ccc;
