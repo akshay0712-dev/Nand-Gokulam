@@ -2,6 +2,26 @@
 * {
 	margin: 0;
 	padding: 0;
+
+}
+
+body {
+	position: relative;
+	/* overflow: hidden; */
+}
+
+body::before {
+	content: "";
+	position: absolute;
+	min-width: 100%;
+	min-height: 100%;
+	background-image: url('resources/img/aboutBg.jpg');
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	opacity: 0.1;
+	z-index: -10;
+
 }
 
 .header {
@@ -88,7 +108,7 @@ nav img {
 }
 
 .text-box p {
-	margin: 10px  40px;
+	margin: 10px 40px;
 	font-size: 14px;
 	color: #fff;
 }
@@ -252,8 +272,8 @@ h3 {
 }
 
 .layer h3 {
-	width: 100%; 
-	font-weight:500;
+	width: 100%;
+	font-weight: 500;
 	color: #fff;
 	font-size: 26px;
 	bottom: 0;
@@ -302,8 +322,8 @@ h3 {
 
 /*-----testimonials-----*/
 .testimonials {
-	width: 80%; 
-	margin:auto;
+	width: 80%;
+	margin: auto;
 	padding-top: 100px;
 	text-align: center;
 }
@@ -377,73 +397,121 @@ center; background-size: cover; border-radius: 10px; text-align: center; padding
  
 
 /*-----footer-----*/
+
 .footer {
-	width: 100%;
+	/* background-color: cyan; */
+	margin: 0 5vw;
 	text-align: center;
-	padding: 30px 0;
+	padding: 20px 0;
+	border-top: 1px solid rgb(130, 130, 130);
+	width: 90vw;
+	/* position: relative; */
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
 }
 
-.footer h4 {
-	margin-bottom: 25px;
-	margin-top: 20px;
-	font-weight: 600;
+
+
+.footer header h2 {
+	font-size: 24px;
+	margin-bottom: 10px;
+	color: #343a40;
 }
 
-.icons {
-	height: 10vh;
+.footer hr {
+	border: 0;
+	border-top: 1px solid rgb(176, 177, 178);
+	margin: 10px 0;
+}
+
+.footer p {
+	font-size: 16px;
+	color: #6c757d;
+}
+
+.footer .icons ul {
+	list-style: none;
+	padding: 0;
+	margin: 20px 0;
 	display: flex;
 	justify-content: center;
+	gap: 20px;
+	flex-wrap: wrap;
 }
 
-
-.icons a {
-	height: 10px;
-	width: 100px;
-	background-color: #a52a2a;
-	border-radius: 50%;
-	text-align: center;
-	margin: 10px;
-	box-shadow: 1px 4px 2px 2px #5f0000;
+.footer .icons ul li {
+	display: inline;
 }
 
-.icons a i {
-	transition: all 0.3s linear;
+.footer .icons ul li a {
+	color: #343a40;
+	text-decoration: none;
+	transition: color 0.3s;
 }
 
-.icons a:hover i {
-	transform: scale(1.4);
+.footer .icons ul li a:hover {
+	color: #007bff;
 }
 
-.fa-instagram {
-	color: #8a3ab9;
+.footer .icons ul li a i {
+	font-size: 24px;
 }
 
-.fa-facebook {
-	color: #1E90FF;
+.footer p b {
+	font-size: 18px;
+	color: #343a40;
 }
 
-.fa-twitter {
-	color: #0097e6;
+.footer p b i {
+	color: #dc3545;
 }
 
-.fa-whatsapp {
-	color: #7FFF00;
+@media (max-width: 768px) {
+	.footer header h2 {
+		font-size: 20px;
+	}
+
+	.footer p {
+		font-size: 14px;
+	}
+
+	.footer .icons ul {
+		gap: 10px;
+	}
+
+	.footer .icons ul li a i {
+		font-size: 20px;
+	}
+
+	.footer p b {
+		font-size: 16px;
+	}
 }
 
-/*.icons{ color: #f44336; margin:0px 13px; cursor:pointer; padding:18px
-0; /*justify-content: space-between;*/
-/* } */
-.icons ul li {
-	list-style: none;
-	display: inline-block;
-	padding: 8px 12px;
-	position: relative;
-}
+@media (max-width: 480px) {
+	.footer header h2 {
+		font-size: 18px;
+	}
 
-.fa-heart-o {
-	color: #f44336;
-}
+	.footer p {
+		font-size: 12px;
+	}
 
+	.footer .icons ul {
+		flex-direction: column;
+		gap: 5px;
+	}
+
+	.footer .icons ul li a i {
+		font-size: 18px;
+	}
+
+	.footer p b {
+		font-size: 14px;
+	}
+}
 
 /*-----about us page-----*/
 .sub-header {
